@@ -20,6 +20,15 @@ const jsx = (
 
 ReactDOM.render(jsx, document.getElementById("app"));
 
+
+
+
+
+
+
+
+
+
 // store.dispatch(addExpense({description:"water bill", amount:4500}));
 // store.dispatch(addExpense({description:"gas bill", createdAt: 1000}));
 // store.dispatch(addExpense({description:"Rent", amount:109500}));
