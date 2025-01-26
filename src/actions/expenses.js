@@ -27,10 +27,23 @@ export const startAddExpense = (expenseData= {}) => {
 }};
 
 //REMOVE EXPENSE
-export const removeExpense = ({id}={}) =>({
+export const removeExpense = ({id}={}) => ({
     type: 'REMOVE_EXPENSE',
     id
 }); 
+
+//Start remove expense
+export const startRemoveExpense = ({id}={})=> {
+    return (dispatch) => {
+    return database.ref(`expenses/${id}`).remove().then(()=>{
+        dispatch(removeExpense({id})); 
+     }); 
+    };
+};
+
+// database.ref(`expenses/${action.id}`).update({
+//     description: "this is my update"
+//     }); 
 
 //EDIT EXPENSE
 export const editExpense = (id, updates) => ({
