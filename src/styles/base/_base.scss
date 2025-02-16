@@ -1,13 +1,21 @@
 //pixels, 1 rem = 16 pixels
 //62.5% of 16 rem = 10 pixels
 
+//universal selector
+* {
+    box-sizing: border-box; //the other option is content-box which is the default one.
+                            //this includes the box, the padding and the border
+}
+
 html {
     font-size: 62.5%;
 }
  
 body {
+    color: $dark-grey;
     font-family: Helvetica, Arial, Helvetica, sans-serif;
     font-size: $m-size;
+    line-height: 1.6;
 }
 
 button {

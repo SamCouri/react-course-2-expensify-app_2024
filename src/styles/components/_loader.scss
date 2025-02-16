@@ -1,0 +1,12 @@
+.loader {
+    align-items: center;  //center vertically
+    display: flex;
+    height: 100vh; //viewport hight
+    justify-content: center; //center horizontally
+    width: 100vw; //viewport width
+}
+
+.loader__image {
+    height: 6rem;
+    width: 6rem;
+}
